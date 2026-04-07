@@ -1,0 +1,19 @@
+# Swap / temp files
+*.swp
+*.swo
+*~
+
+# LibreOffice
+*.~lock.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+
+# Python (falls relevant)
+__pycache__/
+*.pyc
