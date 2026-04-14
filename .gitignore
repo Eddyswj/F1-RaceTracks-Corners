@@ -14,6 +14,6 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Python (falls relevant)
+# Python
 __pycache__/
 *.pyc
