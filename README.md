@@ -58,28 +58,28 @@ For new fans and enthusiasts, it can be difficult to recognize which track is be
 # File Structure:
 The repository should be organised as follows:
 
-Track/
- └── Sector_1/
-      ├── Corners/
-      │     ├── corner1_{name or na}.jpg
-      │     ├── corner2_{name or na}.jpg
-      │     └── ...
-      └── Straights/
-            ├── sector1_{name or na}.jpg
-└── Sector_2/
-      ├── Corners/
-      │     ├── corner1_{name or na}.jpg
-      │     ├── corner2_{name or na}.jpg
-      │     └── ...
-      └── Straights/
-            ├── sector1_{name or na}.jpg
-└── Sector_3/
-      ├── Corners/
-      │     ├── corner1_{name or na}.jpg
-      │     ├── corner2_{name or na}.jpg
-      │     └── ...
-      └── Straights/
-            ├── sector1_{name or na}.jpg
+Track/<br>
+ └── Sector_1/<br>
+      ├── Corners/<br>
+      │     ├── corner1_{name or na}.jpg<br>
+      │     ├── corner2_{name or na}.jpg<br>
+      │     └── ...<br>
+      └── Straights/<br>
+            ├── sector1_{name or na}.jpg<br>
+└── Sector_2/<br>
+      ├── Corners/<br>
+      │     ├── corner1_{name or na}.jpg<br>
+      │     ├── corner2_{name or na}.jpg<br>
+      │     └── ...<br>
+      └── Straights/<br>
+            ├── sector1_{name or na}.jpg<br>
+└── Sector_3/<br>
+      ├── Corners/<brr>
+      │     ├── corner1_{name or na}.jpg<br>
+      │     ├── corner2_{name or na}.jpg<br>
+      │     └── ...<br>
+      └── Straights/<br>
+            ├── sector1_{name or na}.jpg<br>
 
 ## Naming Conventions:
 For the name that will be placed in the file name it will only be just the popular ones, not corner types.
