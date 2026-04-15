@@ -74,7 +74,7 @@ Track/<br>
       └── Straights/<br>
             ├── sector1_{name or na}.jpg<br>
 └── Sector_3/<br>
-      ├── Corners/<brr>
+      ├── Corners/<br>
       │     ├── corner1_{name or na}.jpg<br>
       │     ├── corner2_{name or na}.jpg<br>
       │     └── ...<br>
