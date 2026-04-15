@@ -23,3 +23,73 @@ For new fans and enthusiasts, it can be difficult to recognize which track is be
 - Provide contextual information about tracks and corners automatically
 - Enhance the viewing and learning experience through intelligent visual analysis
 
+---
+
+## Roadmap / To-Do
+
+**Phase 1: Data Collection**
+- Scrape open-source images
+- Download YouTube videos
+- Extract frames using ffmpeg
+
+**Phase 2: Data Labeling**
+- Define label schema (track + corner)
+- Label initial dataset manually
+- Implement weak labeling via timestamps
+
+**Phase 3: Model Development**
+- Train baseline track classifier
+- Evaluate accuracy
+- Extend to corner classification
+
+**Phase 4: Optimization**
+- Apply data augmentation
+- Improve model architecture
+- Use semi-supervised learning
+
+**Phase 5: Evaluation**
+- Test on unseen race footage
+- Measure:
+  - Accuracy (track)
+  - Accuracy (corner)
+
+---
+
+# File Structure:
+The repository should be organised as follows:
+
+Track/
+ └── Sector_1/
+      ├── Corners/
+      │     ├── corner1_{name or na}.jpg
+      │     ├── corner2_{name or na}.jpg
+      │     └── ...
+      └── Straights/
+            ├── sector1_{name or na}.jpg
+└── Sector_2/
+      ├── Corners/
+      │     ├── corner1_{name or na}.jpg
+      │     ├── corner2_{name or na}.jpg
+      │     └── ...
+      └── Straights/
+            ├── sector1_{name or na}.jpg
+└── Sector_3/
+      ├── Corners/
+      │     ├── corner1_{name or na}.jpg
+      │     ├── corner2_{name or na}.jpg
+      │     └── ...
+      └── Straights/
+            ├── sector1_{name or na}.jpg
+
+## Naming Conventions:
+For the name that will be placed in the file name it will only be just the popular ones, not corner types.
+Use **na** if the segment does not have a known name.
+
+**Corners:**
+- Format: corner{number}_{name or na}.jpg
+- Example: corner_1_2_3_busstop_chicane.jpg, corner2_na.jpg
+
+**Straights:**
+- Format: sector{number}_{name or na}.jpg
+- Example: sector1_mainstraight.jpg, sector2_na.jpg
+
