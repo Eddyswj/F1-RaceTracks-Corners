@@ -1,8 +1,6 @@
 # F1 tracks and corner recognizer
 <img src="https://dl.dropboxusercontent.com/scl/fi/mte5g6ffsf1yi50w4s27f/Screenshot-2026-06-21-at-9.44.36-PM.png?rlkey=3wx9l85pu7gfpyuat3h8xxfo4&st=jzcopb8y" width="600">
 
-test
-
 ## Purpose
 The purpose of this project is to develop a computer vision system that can analyze visual input from Formula 1
 races and automatically identify both the race circuit and the specific corner or section of the track.
