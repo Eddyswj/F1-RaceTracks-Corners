@@ -1,0 +1,60 @@
+{
+  "tracks": {
+    "spa": {
+      "name": "Spa-Francorchamps",
+      "unique": "Legendary high-speed circuit with major elevation swings, forest microclimates, and one of the most famous corner sequences in motorsport.",
+      "overview": "Spa-Francorchamps is a 7.004 km challenge where commitment, aerodynamic balance, and confidence over crests decide lap time. It combines low-speed traction zones, very high-speed sweepers, and long full-throttle sections. Because the circuit runs through the Ardennes, weather can vary from one sector to another, which makes setup, tire management, and strategy unusually complex.",
+      "key_characteristics": [
+        "Largest elevation profile in modern F1 calendar behavior.",
+        "Long lap amplifies every mistake; one small error can cost several corners.",
+        "Multiple overtaking windows through slipstream plus DRS.",
+        "Balance trade-off: low drag on straights versus confidence in fast corners."
+      ],
+      "strategy_focus": [
+        "Rear stability through Eau Rouge-Raidillon influences the entire Kemmel run.",
+        "Brake temperature control is important after very long acceleration periods.",
+        "Variable weather means teams often hedge setup and pit timing windows.",
+        "Tire energy is high in high-speed corners like Pouhon and Blanchimont."
+      ],
+      "overtaking_hotspots": [
+        "La Source after the start-finish straight.",
+        "Les Combes at the end of Kemmel DRS zone.",
+        "Bus Stop Chicane late-braking opportunity before the line."
+      ],
+      "historical_notes": [
+        "Spa is widely regarded as one of the purest driver circuits in Formula 1.",
+        "The Eau Rouge-Raidillon complex is iconic for commitment and precision.",
+        "Frequent weather shifts have produced many strategy-defining races."
+      ],
+      "drs_zones": [
+        {
+          "name": "DRS Zone 1 (Kemmel)",
+          "detail": "Activation after Raidillon, running uphill then flat toward Les Combes. This is the primary overtaking zone due to combined slipstream and DRS effect."
+        },
+        {
+          "name": "DRS Zone 2 (Start-Finish)",
+          "detail": "Shorter second zone toward La Source. Better for pressure and setup moves than guaranteed passes."
+        }
+      ],
+      "sections": [
+        { "id": "la_source", "aliases": ["turn-1", "sector-1"], "name": "La Source", "type": "corner", "significance": "Tight hairpin that launches the lap downhill and is a primary attack point into the Ardennes run.", "cool_fact": "Clean traction here matters because it dictates the entire approach to Eau Rouge.", "map": { "x": 12, "y": 84 } },
+        { "id": "eau_rouge", "aliases": ["turn-2"], "name": "Eau Rouge", "type": "corner", "significance": "The first part of the legendary uphill compression sequence.", "cool_fact": "The car compresses hard here before climbing immediately into Raidillon.", "map": { "x": 21, "y": 58 } },
+        { "id": "raidillon", "aliases": ["turn-3"], "name": "Raidillon", "type": "corner", "significance": "Blind crest and commitment point that defines top speed onto Kemmel.", "cool_fact": "A small lift here is visible in trap speed all the way to Les Combes.", "map": { "x": 31, "y": 44 } },
+        { "id": "kemmel_straight", "aliases": ["turn-4"], "name": "Kemmel Straight", "type": "straight", "significance": "The long uphill straight where drag level and slipstream effectiveness are exposed.", "cool_fact": "This straight is one of the clearest demonstrations of aero efficiency in F1.", "map": { "x": 56, "y": 16 } },
+        { "id": "les_combes", "aliases": ["turn-5"], "name": "Les Combes", "type": "corner", "significance": "Major braking zone after Kemmel and one of the best overtaking chances on the circuit.", "cool_fact": "Late moves here often rely on the tow generated all the way from Raidillon.", "map": { "x": 70, "y": 8 } },
+        { "id": "malmedy", "aliases": ["turn-6"], "name": "Malmedy", "type": "corner", "significance": "Fast transition corner where exit speed matters more than absolute apex aggression.", "cool_fact": "A smooth steering trace here keeps the rear tires calmer for the middle sector.", "map": { "x": 79, "y": 10 } },
+        { "id": "speakers_corner", "aliases": ["turn-7"], "name": "Speaker's Corner", "type": "corner", "significance": "A flowing right-hander that sets rhythm into the mid-circuit complex.", "cool_fact": "This is one of the places where car balance differences are easy to spot visually.", "map": { "x": 78, "y": 26 } },
+        { "id": "bruxelles", "aliases": ["turn-8"], "name": "Bruxelles", "type": "corner", "significance": "Downhill braking corner requiring strong front-end bite and controlled rotation.", "cool_fact": "It rewards drivers who can release the brakes smoothly without washing wide.", "map": { "x": 88, "y": 34 } },
+        { "id": "double_gauche", "aliases": ["turn-9"], "name": "Double Gauche", "type": "corner", "significance": "Long left-hand complex where mid-corner load and precision are critical.", "cool_fact": "The long arc makes this one of the clearest aero-balance checks on the lap.", "map": { "x": 67, "y": 49 } },
+        { "id": "les_fagnes", "aliases": ["turn-10"], "name": "Les Fagnes", "type": "corner", "significance": "Technical change-of-direction section that punishes rough curb usage.", "cool_fact": "This area can separate a safe lap from an aggressive one very quickly.", "map": { "x": 83, "y": 64 } },
+        { "id": "campus", "aliases": ["turn-11", "sector-3"], "name": "Campus", "type": "corner", "significance": "Exit-focused corner that leads toward the downhill return to Stavelot and the final sector.", "cool_fact": "Drivers often sacrifice entry to guarantee traction on exit.", "map": { "x": 88, "y": 82 } },
+        { "id": "stavelot", "aliases": ["turn-12"], "name": "Stavelot", "type": "corner", "significance": "Fast right-hander that starts the committed run back toward the final high-speed sector.", "cool_fact": "Any early throttle allows a car to carry momentum into the next sector.", "map": { "x": 79, "y": 94 } },
+        { "id": "courbe_paul_frere", "aliases": ["turn-13"], "name": "Courbe Paul Frere", "type": "corner", "significance": "High-speed sweep that rewards bravery and smooth aerodynamic grip.", "cool_fact": "This is one of the best places to see whether the car is planted over long load.", "map": { "x": 61, "y": 83 } },
+        { "id": "blanchimont", "aliases": ["turn-14"], "name": "Blanchimont", "type": "corner", "significance": "Extremely fast left-right area where total commitment is required.", "cool_fact": "Tiny confidence differences here can separate the top of the field from the midfield.", "map": { "x": 48, "y": 66 } },
+        { "id": "chicane", "aliases": ["turn-15"], "name": "Chicane", "type": "corner", "significance": "Final braking and rotation zone before the finish line.", "cool_fact": "The exit here is the last clean chance to defend into the timing line and Lap 1.", "map": { "x": 30, "y": 79 } },
+        { "id": "drs_1", "name": "Kemmel DRS", "type": "drs", "significance": "Primary DRS zone and major passing corridor.", "cool_fact": "Combined DRS plus slipstream creates the biggest closing-speed delta on the lap.", "map": { "x": 44, "y": 21 } },
+        { "id": "drs_2", "name": "Start-Finish DRS", "type": "drs", "significance": "Secondary DRS zone that helps pressure the leader into Turn 1.", "cool_fact": "This zone is more about setting up an overtake than always completing one.", "map": { "x": 17, "y": 93 } }
+      ]
+    }
+  }
+}

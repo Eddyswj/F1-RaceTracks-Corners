@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>F1 Track Classroom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="hero">
+    <p class="eyebrow">Interactive Learning Playground</p>
+    <h1>F1 Track Classroom</h1>
+    <p class="hero-copy">
+      Upload race footage, run your Roboflow corner detector, and watch the track map react in real time with facts about corners, sectors, and DRS zones.
+    </p>
+  </header>
+
+  <main class="layout">
+    <section class="panel upload-panel">
+      <h2>Analyze A Video</h2>
+      <form id="analyze-form">
+        <label for="track-select">Track</label>
+        <select id="track-select" name="track"></select>
+
+        <label for="video-input">Video File</label>
+        <input id="video-input" name="video" type="file" accept="video/*" required />
+
+        <button id="analyze-btn" type="submit">Run Model + Build Learning Overlay</button>
+      </form>
+      <p id="status" class="status idle">Choose a track and upload a video.</p>
+      <div class="stats">
+        <div>
+          <span class="label">Prediction Frames</span>
+          <span id="prediction-count" class="value">0</span>
+        </div>
+        <div>
+          <span class="label">Timeline Events</span>
+          <span id="event-count" class="value">0</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel map-panel">
+      <div class="map-header">
+        <h2 id="track-title">Track Map</h2>
+        <p id="track-unique" class="muted"></p>
+      </div>
+
+      <div id="track-map" class="track-map spa-track-map">
+        <div class="track-map-tint"></div>
+      </div>
+
+      <div class="map-footer">
+        <h3 id="section-title">Hover a section</h3>
+        <p id="section-significance">Each node explains what makes that turn, sector, or DRS zone important.</p>
+        <p id="section-fact" class="fact"></p>
+      </div>
+    </section>
+
+    <section class="panel video-panel">
+      <h2>Playback + Live Highlights</h2>
+      <div class="video-grid">
+        <div>
+          <h3>Original</h3>
+          <video id="original-video" controls></video>
+        </div>
+        <div>
+          <h3>Annotated</h3>
+          <video id="annotated-video" controls></video>
+        </div>
+      </div>
+      <div id="event-popup" class="event-popup hidden"></div>
+    </section>
+
+    <section class="panel details-panel">
+      <h2>Track Intelligence</h2>
+      <p id="track-overview"></p>
+      <h3>Key Characteristics</h3>
+      <ul id="characteristics-list"></ul>
+      <h3>Strategy Focus</h3>
+      <ul id="strategy-list"></ul>
+      <h3>Overtaking Hotspots</h3>
+      <ul id="overtaking-list"></ul>
+      <h3>DRS Zones</h3>
+      <ul id="drs-list"></ul>
+      <h3>Historical Context</h3>
+      <ul id="history-list"></ul>
+    </section>
+  </main>
+
+  <script>
+    window.TRACKS_DATA = {{ tracks_data|tojson }};
+  </script>
+  <script src="/static/app.js"></script>
+</body>
+</html>

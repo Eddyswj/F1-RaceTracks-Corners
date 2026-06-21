@@ -87,5 +87,43 @@ The dataset includes images from different camera angles, weather conditions, li
 
 The dataset will be split into training, validation, and testing sets to evaluate the model's ability to classify unseen images correctly.
 
+---
+
+## Interactive Frontend (Track Classroom)
+
+This repository now includes an interactive web app that:
+
+- Lets you upload a race video
+- Runs the existing Roboflow model from `run_model.py`
+- Generates an annotated video
+- Displays a hoverable map with track-specific facts
+- Highlights sections in sync with detections while the video plays
+
+### Run locally
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Start the web app:
+
+```bash
+python frontend/app.py
+```
+
+3. Open the app in your browser:
+
+```text
+http://127.0.0.1:5000
+```
+
+### Notes
+
+- The Roboflow model configuration is reused exactly from `run_model.py`.
+- Uploaded videos are saved to `frontend/static/uploads`.
+- Annotated outputs are saved to `frontend/static/outputs`.
+
 
 
