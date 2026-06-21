@@ -1,4 +1,5 @@
 # F1 tracks and corner recognizer
+<img src="https://dl.dropboxusercontent.com/scl/fi/mte5g6ffsf1yi50w4s27f/Screenshot-2026-06-21-at-9.44.36-PM.png?rlkey=3wx9l85pu7gfpyuat3h8xxfo4&st=jzcopb8y" width="600">
 
 ## Purpose
 The purpose of this project is to develop a computer vision system that can analyze visual input from Formula 1
@@ -22,36 +23,6 @@ For new fans and enthusiasts, it can be difficult to recognize which track is be
 - Help new fans better understand and engage with Formula 1 races
 - Provide contextual information about tracks and corners automatically
 - Enhance the viewing and learning experience through intelligent visual analysis
-
----
-
-## Roadmap / To-Do
-
-**Phase 1: Data Collection**
-- Scrape open-source images
-- Download YouTube videos
-- Extract frames using ffmpeg
-
-**Phase 2: Data Labeling**
-- Define label schema (track + corner)
-- Label initial dataset manually
-- Implement weak labeling via timestamps
-
-**Phase 3: Model Development**
-- Train baseline track classifier
-- Evaluate accuracy
-- Extend to corner classification
-
-**Phase 4: Optimization**
-- Apply data augmentation
-- Improve model architecture
-- Use semi-supervised learning
-
-**Phase 5: Evaluation**
-- Test on unseen race footage
-- Measure:
-  - Accuracy (track)
-  - Accuracy (corner)
 
 ---
 
@@ -115,5 +86,6 @@ If a corner or straight does not have a commonly known name, the label `na` is u
 The dataset includes images from different camera angles, weather conditions, lighting conditions, cars, and race sessions. This variation helps the model learn track features more reliably instead of depending only on one camera angle or race condition.
 
 The dataset will be split into training, validation, and testing sets to evaluate the model's ability to classify unseen images correctly.
+
 
 
