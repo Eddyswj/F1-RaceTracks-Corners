@@ -93,3 +93,27 @@ Use **na** if the segment does not have a known name.
 - Format: sector{number}_{name or na}.jpg
 - Example: sector1_mainstraight.jpg, sector2_na.jpg
 
+---
+
+## Dataset
+
+The dataset for this project contains approximately **10,000 manually collected and labelled images** from Formula 1 race footage.
+
+There was no publicly available dataset that matched the requirements of recognising both Formula 1 circuits and specific track corners. Therefore, the images were gathered manually from Formula 1 race videos and labelled individually.
+
+Each image is labelled based on:
+
+- **Track name** — the Formula 1 circuit where the image was taken
+- **Sector number** — Sector 1, Sector 2, or Sector 3
+- **Segment type** — corner or straight
+- **Corner number** — for example, Turn 1, Turn 2, or Turn 3
+- **Popular corner name**, if applicable — for example, `busstop_chicane`
+- **Straight name**, if applicable — for example, `mainstraight`
+
+If a corner or straight does not have a commonly known name, the label `na` is used.
+
+The dataset includes images from different camera angles, weather conditions, lighting conditions, cars, and race sessions. This variation helps the model learn track features more reliably instead of depending only on one camera angle or race condition.
+
+The dataset will be split into training, validation, and testing sets to evaluate the model's ability to classify unseen images correctly.
+
+
