@@ -3,7 +3,7 @@ import cv2
 import json
 import re
 
-rf = Roboflow(api_key="ixTIykvVW00km8WDyB96")
+rf = Roboflow(api_key="your_api_key")
 project = rf.workspace().project("f1_corner_detect")
 model = project.version("5").model
 
